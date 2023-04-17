@@ -1,0 +1,26 @@
+{% from '../macros/icon.twig' import icon %}
+
+<footer class="footer">
+	<div class="container">
+			<div class="footer__wrap">
+				<div class="footer__holder">	
+					<a href="/" class="footer__logo">
+						{{ icon('logo' , {'width': 105, 'height': 123}) }}
+					</a>
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Brandbook</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Legal</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__img">
+					<img src="assets/images/footer-img.jpg" alt="">
+				</div>
+			</div>
+			<div class="footer__copyright">CryptoCubes, 2023</div>
+	</div>
+</footer>

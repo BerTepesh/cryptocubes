@@ -1,0 +1,19 @@
+{% extends 'layouts/base.twig' %}
+
+{% set curPageId = 'home' %}
+
+{% block title %}CryptoCubes{% endblock %}
+
+{% block body %}
+    {% include 'partials/landing/intro.twig' %}
+    {% include 'partials/card-list.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/stylesheets/landing.min.css" />
+{% endblock %}
+
+{% block javascripts %}
+ 
+{% endblock %}
+ 

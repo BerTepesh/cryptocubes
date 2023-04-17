@@ -1,0 +1,75 @@
+{% from '../macros/icon.twig' import icon %}
+
+<header class="header {{ headerAttrs.class|default('') }}">
+	<div class="container">
+		<div class="header__wrap">
+			<a href="#" class="ham-trigger">&nbsp;</a>
+			<div class="header__logo-wrap">
+				<a href="/" class="header__logo">
+					{{ icon('logo' , {'width': 60, 'height': 70}) }}
+					<div class="header__logo-text">
+						<span>cryptocubes</span>
+						<span>cryptocubes</span>
+					</div>
+				</a>
+			</div>
+			<div class="header__holder">
+				<nav class="main-nav">
+					<ul>
+						{% for item in navigation %}
+							{% if item.children|default(false) and item.children|length %}
+								<li class="has-children">
+									<span>{{ item.title }}</span>
+									<div class="sub-nav">
+										<ul>
+											{% for item in item.children %}
+												<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+											{% endfor %}
+										</ul>
+									</div>
+								</li>
+							{% else %}
+								<li {% if curPageId == item.pageId %} class="active"{% endif %}><a href="{{ item.url }}">{{ item.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
+				<div class="header__info">
+					<ul class="social">
+						<li>
+							<a href="#">
+								{{ icon('discord' , {'width': 32, 'height': 24}) }}
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								{{ icon('youtube' , {'width': 34, 'height': 25}) }}
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								{{ icon('fb' , {'width': 25, 'height': 25}) }}
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								{{ icon('main' , {'width': 25, 'height': 25}) }}
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								{{ icon('rd' , {'width': 25, 'height': 25}) }}
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								{{ icon('tw' , {'width': 25, 'height': 25}) }}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+

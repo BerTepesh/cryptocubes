@@ -1,0 +1,32 @@
+@font-face {
+    $path-font-face: '../fonts/BrokenConsole/brokenconsolebold';
+    font-family: 'BrokenConsole';
+    src: local('BrokenConsole'), url('#{$path-font-face}.woff') format('woff'), url('#{$path-font-face}.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    $path-font-face: '../fonts/Mulish/mulish-variablefont_wght';
+    font-family: 'Mulish';
+    src: local('Mulish'), url('#{$path-font-face}.woff') format('woff'), url('#{$path-font-face}.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    $path-font-face: '../fonts/Alegreya/alegreyasans-regular';
+    font-family: 'Alegreyasans';
+    src: local('Alegreyasans'), url('#{$path-font-face}.woff') format('woff'), url('#{$path-font-face}.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    $path-font-face: '../fonts/Alegreya/alegreyasans-bold';
+    font-family: 'Alegreyasans';
+    src: local('Alegreyasans'), url('#{$path-font-face}.woff') format('woff'), url('#{$path-font-face}.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
